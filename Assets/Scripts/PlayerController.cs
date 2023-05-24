@@ -78,5 +78,10 @@ public class PlayerController : MonoBehaviour
             sfxManager.CoinSound();
             Destroy(collider.gameObject);
         }
+    
+        if(collider.gameObject.tag == "Gun")
+        {
+            Destroy(collider.gameObject);
+        }
     }
 }
